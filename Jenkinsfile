@@ -14,6 +14,7 @@ pipeline {
             echo 'Running Fine'
           else
             echo 'Error'
+        }
       }
     }
     stage("deploy") {
