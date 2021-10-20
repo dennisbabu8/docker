@@ -9,6 +9,11 @@ pipeline {
     stage("test") {
       steps{
         echo 'Testing app.'
+        script{
+          if (5>3)
+            echo 'Running Fine'
+          else
+            echo 'Error'
       }
     }
     stage("deploy") {
